@@ -39,7 +39,6 @@ create table  "Cart"(
 	FOREIGN KEY (user_id) REFERENCES "User" (id)
 );
 
---part 2
 
 create table  "CartItem"(
 	id INTEGER not NULL,
@@ -82,7 +81,7 @@ create table "OrderItem" (
 
 
 
-create table Payment (
+create table "Payment" (
 	id Integer not null , 
 	date Date not null , 
 	total_price Integer not null , 
@@ -92,19 +91,60 @@ create table Payment (
 	FOREIGN KEY (order_id) REFERENCES "Order" (id)
 )
 
-create table Delivery (
+create table "Delivery" (
 	id Integer not null , 
 	date Date not null , 
 	status boolean not null,
 	payment_id Integer not null ,
 	address_id Integer not null ,
-	FOREIGN KEY (payment_id) REFERENCES "Order" (id)
-	FOREIGN KEY (address_id) REFERENCES "Order" (id)
+	FOREIGN KEY (payment_id) REFERENCES "Payment" (id)
+	FOREIGN KEY (address_id) REFERENCES "Address" (id)
 
 )
 
 
---part 3
+--part 2
+
+create table "Manage" (
+	id Integer not null , 
+	per_id Integer not null , 
+	menuItem_id Integer not null ,
+	FOREIGN KEY (menuItem_id) REFERENCES "MenuItem" (id)
+
+)
+
+
+create table "Permission" (
+	id Integer not null , 
+	user_id Integer not null , 
+	per_name varchar(20) not null ,
+	FOREIGN KEY (user_id) REFERENCES "User" (id)
+
+)
+
+
+
+create table "Comment" (
+	user_id Integer not null , 
+	menuItem_id Integer not null , 
+	FOREIGN KEY (user_id) REFERENCES "User" (id)
+	FOREIGN KEY (menuItem_id) REFERENCES "MenuItem" (id)
+	PRIMARY KEY (user_id , menuItem_id )
+)
+
+create table MenuType (
+	id Integer not null , 
+	name varchar (20)
+)
+
+create table subMenu (
+	id Integer not null ,
+	type_id Integer not null , 
+	FOREIGN KEY (type_id) REFERENCES "MenuType" (id)
+	PRIMARY KEY (id)
+)
+
+
 
 
 
