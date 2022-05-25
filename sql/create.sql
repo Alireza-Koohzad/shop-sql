@@ -53,21 +53,8 @@ create table  "Cart"(
 );
 
 
-create table  "CartItem"(
-	id  serial,
-	quantity Integer not null ,
-	cart_id Integer not null ,
-	menuItem_id Integer not null,
-	FOREIGN KEY (cart_id) REFERENCES "Cart" (id) ,
-	FOREIGN KEY (menuItem_id) REFERENCES "MenuItem" (id),
-	PRIMARY KEY (id),
-	CONSTRAINT check_quantity_len CHECK(quantity >0 )
-
-
-);
-
 create table "MenuType" (
-	id Integer not null , 
+	id serial , 
 	name varchar (20),
 	PRIMARY KEY (id)
 
@@ -86,6 +73,21 @@ create table "MenuItem" (
 	FOREIGN KEY (type_id) REFERENCES "MenuType" (id),
 	PRIMARY KEY (id)
 );
+
+create table  "CartItem"(
+	id  serial,
+	quantity Integer not null ,
+	cart_id Integer not null ,
+	menuItem_id Integer not null,
+	FOREIGN KEY (cart_id) REFERENCES "Cart" (id) ,
+	FOREIGN KEY (menuItem_id) REFERENCES "MenuItem" (id),
+	PRIMARY KEY (id),
+	CONSTRAINT check_quantity_len CHECK(quantity >0 )
+
+
+);
+
+
 
 create table "Order" (
 	id serial , 
@@ -116,7 +118,7 @@ create table "OrderItem" (
 
 
 create table "Payment" (
-	id Integer not null , 
+	id serial , 
 	date Date not null , 
 	total_price Integer not null , 
 	status boolean not null,
@@ -128,7 +130,7 @@ create table "Payment" (
 )
 
 create table "Delivery" (
-	id Integer not null , 
+	id serial , 
 	date Date not null , 
 	status boolean not null,
 	payment_id Integer not null ,
@@ -143,7 +145,7 @@ create table "Delivery" (
 --part 2
 
 create table "Manage" (
-	id Integer not null , 
+	id serial , 
 	per_id Integer not null , 
 	menuItem_id Integer not null ,
 	FOREIGN KEY (menuItem_id) REFERENCES "MenuItem" (id),
@@ -153,7 +155,7 @@ create table "Manage" (
 
 
 create table "Permission" (
-	id Integer not null , 
+	id serial , 
 	user_id Integer not null , 
 	per_name varchar(100) not null ,
 	FOREIGN KEY (user_id) REFERENCES "User" (id),
@@ -180,14 +182,12 @@ create table "Rate" (
 	FOREIGN KEY (menuItem_id) REFERENCES "MenuItem" (id),
 	PRIMARY KEY (user_id , menuItem_id ) ,
 	CONSTRAINT check_quantity_len CHECK(rate >=0 and rate <=5 )
-
 )
 
 
-
-
+ 
 create table "subMenu" (
-	id Integer not null ,
+	id serial ,
 	type_id Integer not null , 
 	FOREIGN KEY (type_id) REFERENCES "MenuType" (id),
 	PRIMARY KEY (id)
