@@ -168,3 +168,19 @@ insert into "Delivery" (date , status , payment_id , address_id ) values (  '202
 insert into "Delivery" (date , status , payment_id , address_id ) values (  '2022-3-20' , true, 9 ,   14  );
 
 
+
+--rate 
+
+insert into "Rate" (user_id , menuitem_id , rate , isbuy ) values (  3 , 1, 4 ,  true  );
+insert into "Rate" (user_id , menuitem_id , rate , isbuy ) values (  4 , 4, 3 ,  true  );
+insert into "Rate" (user_id , menuitem_id , rate , isbuy ) values (  5 , 7, null ,  false  );
+insert into "Rate" (user_id , menuitem_id , rate , isbuy ) values (  6 , 9, null ,  false  );
+insert into "Rate" (user_id , menuitem_id , rate , isbuy ) values (  7 , 2 , 4 , true  );
+insert into "Rate" (user_id , menuitem_id , rate , isbuy ) values (  8 , 10  , 5 ,true  );
+insert into "Rate" (user_id , menuitem_id , rate , isbuy ) values (  3 , 2,   2, true  );
+insert into "Rate" (user_id , menuitem_id , rate , isbuy ) values (  4 , 5 , 5, true  );
+insert into "Rate" (user_id , menuitem_id , rate , isbuy ) values (  8 , 6 ,  1 ,true  );
+insert into "Rate" (user_id , menuitem_id , rate , isbuy ) values (  6 , 8,    5 , true  );
+
+
+
