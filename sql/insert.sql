@@ -57,4 +57,36 @@ insert into "MenuType" (name) values ('drink');
 
 
 
+--menu item
+
+insert into "MenuItem" (name , price , image , status, description , type_id ) 
+	values ('ghorme sabzi' , 50000 , 'ghormesabzi.png' , 'yes' , 'awesome' , 2);
+insert into "MenuItem" (name , price , image , status, description , type_id ) 
+	values ('chelo kabab' , 90000 , 'kabab.png' , 'yes' , 'good' , 2);
+insert into "MenuItem" (name , price , image , status, description , type_id ) 
+	values ('soop' , 10000 , 'soop.png' , 'yes' , 'not bad' , 1);	
+insert into "MenuItem" (name , price , image , status, description , type_id ) 
+	values ('akbarjooje' , 70000 , 'akbarjooje.png' , 'yes' , 'good' , 2);
+insert into "MenuItem" (name , price , image , status, description , type_id ) 
+	values ('nooshabe' , 5000 , 'nooshabe.png' , 'yes' , 'bad' , 3);
+insert into "MenuItem" (name , price , image , status, description , type_id ) 
+	values ('doogh' , 4000 , 'doogh.png' , 'yes' , 'good' , 3);
+insert into "MenuItem" (name , price , image , status, description , type_id ) 
+	values ('zhele' , 9000 , 'zhele.png' , 'yes' , 'not bad' , 1);	
+insert into "MenuItem" (name , price , image , status, description , type_id ) 
+	values ('gheime' , 30000 , 'gheime.png' , 'yes' , 'perfect' , 2);
+insert into "MenuItem" (name , price , image , status, description , type_id ) 
+	values ('delester' , 10000 , 'delester.png' , 'no' , 'very good' , 3);
+insert into "MenuItem" (name , price , image , status, description , type_id ) 
+	values ('cake' , 12000 , 'cake.png' , 'yes' , 'good stuff' , 1);
+	
+
+	
+
+
+
+
+
+
+
 
