@@ -155,3 +155,16 @@ insert into "Payment" (date , total_price , status , pay_code , order_id) values
 insert into "Payment" (date , total_price , status , pay_code , order_id) values (  '2022-3-17' , 4300, true ,   1463 , 10  );
 
 
+--delivery
+
+insert into "Delivery" (date , status , payment_id , address_id ) values (  '2022-12-15' , true, 1 ,   13  );
+insert into "Delivery" (date , status , payment_id , address_id ) values (  '2022-1-3' , false, 2 ,   14  );
+insert into "Delivery" (date , status , payment_id , address_id ) values (  '2022-2-10' , false, 3 ,   15  );
+insert into "Delivery" (date , status , payment_id , address_id ) values (  '2022-3-28' , true, 4 ,   16  );
+insert into "Delivery" (date , status , payment_id , address_id ) values (  '2022-11-28' , true, 5 ,   17  );
+insert into "Delivery" (date , status , payment_id , address_id ) values (  '2022-6-30' , true, 6 ,   17  );
+insert into "Delivery" (date , status , payment_id , address_id ) values (  '2022-7-5' , true, 7 ,   18  );
+insert into "Delivery" (date , status , payment_id , address_id ) values (  '2022-4-8' , true, 8 ,   13 );
+insert into "Delivery" (date , status , payment_id , address_id ) values (  '2022-3-20' , true, 9 ,   14  );
+
+
