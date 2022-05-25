@@ -183,4 +183,16 @@ insert into "Rate" (user_id , menuitem_id , rate , isbuy ) values (  8 , 6 ,  1 
 insert into "Rate" (user_id , menuitem_id , rate , isbuy ) values (  6 , 8,    5 , true  );
 
 
+-- comment 
+
+insert into "Comment" (user_id , menuitem_id , message ) values (  3 , 1 , 'this is a good food' );
+insert into "Comment" (user_id , menuitem_id , message ) values (  4 , 4  , 'dd' );
+insert into "Comment" (user_id , menuitem_id , message ) values (  5, 7 , 'a' );
+insert into "Comment" (user_id , menuitem_id , message ) values (  7 ,2 , 'b' );
+insert into "Comment" (user_id , menuitem_id , message ) values (  8 , 10 , 'asd' );
+insert into "Comment" (user_id , menuitem_id , message ) values (  6 , 8 , 'adaf' );
+insert into "Comment" (user_id , menuitem_id , message ) values (  8 ,6 , 'fgggg' );
+insert into "Comment" (user_id , menuitem_id , message ) values (  3 ,2 , 'bbbbv' );
+
+
 
