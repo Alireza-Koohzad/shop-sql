@@ -35,6 +35,16 @@ insert into "User" (email , username , password  , role , customer_id)
 	values ('mohammad@gmail.com' , 'mohammad' , 8883124, 'admin' , 8);
 
 
+--phone 
+
+insert into "Phone" (phone_number , customer_id ) values ('9111234563' , 3);
+insert into "Phone" (phone_number , customer_id ) values ('9111234569' , 3);
+insert into "Phone" (phone_number , customer_id ) values ('9111231233' , 4);
+insert into "Phone" (phone_number , customer_id ) values ('9111236245' , 6);
+insert into "Phone" (phone_number , customer_id ) values ('9111231245' , 7);
+insert into "Phone" (phone_number , customer_id ) values ('9111266613' , 8);
+
+
 --cart
 
 insert into "Cart" (user_id ) values (3);
@@ -142,7 +152,7 @@ insert into "OrderItem" (menuitem_id , order_id , quantity) values ( 1 , 4,   2)
 
 
 
--- payement
+-- payment
 
 insert into "Payment" (date , total_price , status , pay_code , order_id) values (  '2022-12-12' , 30000, true ,   15 , 1  );
 insert into "Payment" (date , total_price , status , pay_code , order_id) values (  '2022-1-1' , 100000, false,   2453 , 2  );
@@ -214,3 +224,5 @@ insert into "Manage" (per_id , menuitem_id ) values (  4 , 3 );
 insert into "Manage" (per_id , menuitem_id ) values (  5 , 4 );
 
 
+
+--
