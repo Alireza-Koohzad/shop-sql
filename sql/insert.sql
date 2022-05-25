@@ -23,8 +23,36 @@ insert into "Customer" (firstname , lastname , address_id ) values ('mohammad' ,
 
 --user 
 
+insert into "User" (email , username , password  , role , customer_id)
+	values ('alireza@gmail.com' , 'alireza' , 123456, 'user' , 3);
+insert into "User" (email , username , password  , role , customer_id)
+	values ('mojtaba@gmail.com' , 'mojtaba' , 151353, 'user' , 4);
+insert into "User" (email , username , password  , role , customer_id)
+	values ('pouya@gmail.com' , 'pouya' , 12345678, 'admin' , 5);
+insert into "User" (email , username , password  , role , customer_id)
+	values ('navid@gmail.com' , 'navid' , 9876354, 'user' , 6);
+insert into "User" (email , username , password  , role , customer_id)
+	values ('yousef@gmail.com' , 'yousef' , 4454123, 'user' , 7);
+insert into "User" (email , username , password  , role , customer_id)
+	values ('mohammad@gmail.com' , 'mohammad' , 8883124, 'admin' , 8);
 
 
+--cart
+
+insert into "Cart" (user_id ) values (3);
+insert into "Cart" (user_id ) values (4);
+insert into "Cart" (user_id ) values (5);
+insert into "Cart" (user_id ) values (6);
+insert into "Cart" (user_id ) values (7);
+insert into "Cart" (user_id ) values (8);
+
+
+
+--menu type
+
+insert into "MenuType" (name) values ('deser');
+insert into "MenuType" (name) values ('food');
+insert into "MenuType" (name) values ('drink');
 
 
 
