@@ -128,8 +128,17 @@ insert into "Order" (amount , pay_status , ship_status , user_id  ) values ( 430
 
 
 
+--order Item 
 
-
+insert into "OrderItem" (menuitem_id , order_id , quantity) values ( 2 , 1 , 12);
+insert into "OrderItem" (menuitem_id , order_id , quantity) values ( 2 ,  2 ,  2);
+insert into "OrderItem" (menuitem_id , order_id , quantity) values ( 3 , 1 , 3);
+insert into "OrderItem" (menuitem_id , order_id , quantity) values ( 4  , 3 , 1);
+insert into "OrderItem" (menuitem_id , order_id , quantity) values ( 5 , 3,2 );
+insert into "OrderItem" (menuitem_id , order_id , quantity) values ( 10 , 2 ,  6);
+insert into "OrderItem" (menuitem_id , order_id , quantity) values ( 10 , 4, 5 );
+insert into "OrderItem" (menuitem_id , order_id , quantity) values ( 1 , 5 , 5);
+insert into "OrderItem" (menuitem_id , order_id , quantity) values ( 1 , 4,   2);
 
 
 
