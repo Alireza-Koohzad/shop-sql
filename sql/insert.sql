@@ -142,6 +142,16 @@ insert into "OrderItem" (menuitem_id , order_id , quantity) values ( 1 , 4,   2)
 
 
 
+-- payement
 
+insert into "Payment" (date , total_price , status , pay_code , order_id) values (  '2022-12-12' , 30000, true ,   15 , 1  );
+insert into "Payment" (date , total_price , status , pay_code , order_id) values (  '2022-1-1' , 100000, false,   2453 , 2  );
+insert into "Payment" (date , total_price , status , pay_code , order_id) values (  '2022-2-7' , 42300, false ,   3453 , 3  );
+insert into "Payment" (date , total_price , status , pay_code , order_id) values (  '2022-3-24' , 50000, true ,   44534 , 4  );
+insert into "Payment" (date , total_price , status , pay_code , order_id) values (  '2022-11-23' , 20000, true ,   5453 , 5  );
+insert into "Payment" (date , total_price , status , pay_code , order_id) values (  '2022-6-28' , 10000, true ,   145346 , 6  );
+insert into "Payment" (date , total_price , status , pay_code , order_id) values (  '2022-7-2' , 1000, true ,   1463 , 8  );
+insert into "Payment" (date , total_price , status , pay_code , order_id) values (  '2022-4-5' , 2000, true ,   1463 ,9  );
+insert into "Payment" (date , total_price , status , pay_code , order_id) values (  '2022-3-17' , 4300, true ,   1463 , 10  );
 
 
