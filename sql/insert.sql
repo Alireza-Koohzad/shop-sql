@@ -114,6 +114,22 @@ insert into "subMenu" (type_id , name) values ( 3, 'cold');
 
 
 
+--order
+insert into "Order" (amount , pay_status , ship_status , user_id  ) values ( 30000, true , true , 3 );
+insert into "Order" (amount , pay_status , ship_status , user_id  ) values ( 100000, true , true , 4 );
+insert into "Order" (amount , pay_status , ship_status , user_id  ) values ( 42300, true , true , 5 );
+insert into "Order" (amount , pay_status , ship_status , user_id  ) values ( 50000, false , false , 6 );
+insert into "Order" (amount , pay_status , ship_status , user_id  ) values ( 20000, true , true , 7 );
+insert into "Order" (amount , pay_status , ship_status , user_id  ) values ( 10000, false, false , 3 );
+insert into "Order" (amount , pay_status , ship_status , user_id  ) values ( 30000, true , false , 4 );
+insert into "Order" (amount , pay_status , ship_status , user_id  ) values ( 1000, true , true , 3);
+insert into "Order" (amount , pay_status , ship_status , user_id  ) values ( 2000, true , true , 5);
+insert into "Order" (amount , pay_status , ship_status , user_id  ) values ( 4300, true , true , 5);
+
+
+
+
+
 
 
 
