@@ -205,3 +205,12 @@ insert into "Permission" (user_id , per_name ) values (  8 , 'update' );
 
 
 
+--manage 
+
+insert into "Manage" (per_id , menuitem_id ) values (  1 , 1 );
+insert into "Manage" (per_id , menuitem_id ) values (  2 , 1 );
+insert into "Manage" (per_id , menuitem_id ) values (  3 , 2 );
+insert into "Manage" (per_id , menuitem_id ) values (  4 , 3 );
+insert into "Manage" (per_id , menuitem_id ) values (  5 , 4 );
+
+
