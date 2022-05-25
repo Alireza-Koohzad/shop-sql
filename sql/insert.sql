@@ -82,6 +82,20 @@ insert into "MenuItem" (name , price , image , status, description , type_id )
 	
 
 	
+--cart item 
+
+insert into "CartItem" (quantity , cart_id , menuitem_id) values (12 , 1 , 1);
+insert into "CartItem" (quantity , cart_id , menuitem_id) values (2 , 2 , 2);
+insert into "CartItem" (quantity , cart_id , menuitem_id) values (3 , 3 , 3);
+insert into "CartItem" (quantity , cart_id , menuitem_id) values (1 , 4 , 4);
+insert into "CartItem" (quantity , cart_id , menuitem_id) values (2 , 5 , 5);
+insert into "CartItem" (quantity , cart_id , menuitem_id) values (6 , 6 , 6);
+insert into "CartItem" (quantity , cart_id , menuitem_id) values (2 , 1 , 10);
+insert into "CartItem" (quantity , cart_id , menuitem_id) values (2 , 2 , 1);
+insert into "CartItem" (quantity , cart_id , menuitem_id) values (1 , 3 , 2);
+insert into "CartItem" (quantity , cart_id , menuitem_id) values (6 , 1 , 10);
+insert into "CartItem" (quantity , cart_id , menuitem_id) values (5 , 5 , 10);
+insert into "CartItem" (quantity , cart_id , menuitem_id) values (5 , 2 , 1);
 
 
 
