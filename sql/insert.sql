@@ -1,5 +1,3 @@
-insert into "Customer" ("a" , "b" , 1);
-
 
 -- address 
 insert into "Address" (city , street_number , post_code ,street_name  ) values ('paris', 1 , 1 , 'asadi' );
@@ -96,6 +94,24 @@ insert into "CartItem" (quantity , cart_id , menuitem_id) values (1 , 3 , 2);
 insert into "CartItem" (quantity , cart_id , menuitem_id) values (6 , 1 , 10);
 insert into "CartItem" (quantity , cart_id , menuitem_id) values (5 , 5 , 10);
 insert into "CartItem" (quantity , cart_id , menuitem_id) values (5 , 2 , 1);
+
+
+--submenu
+
+
+insert into "subMenu" (type_id , name) values ( 1, 'irani');
+insert into "subMenu" (type_id , name) values ( 1, 'cold');
+insert into "subMenu" (type_id , name) values ( 1, 'hot');
+insert into "subMenu" (type_id , name) values ( 1, 'child');
+insert into "subMenu" (type_id , name) values ( 2, 'irani');
+insert into "subMenu" (type_id , name) values ( 2, 'italy');
+insert into "subMenu" (type_id , name) values ( 2, 'khis');
+insert into "subMenu" (type_id , name) values ( 2, 'khoshk');
+insert into "subMenu" (type_id , name) values ( 3, 'gazdar');
+insert into "subMenu" (type_id , name) values ( 3, 'bigaz');
+insert into "subMenu" (type_id , name) values ( 3, 'hot');
+insert into "subMenu" (type_id , name) values ( 3, 'cold');
+
 
 
 
