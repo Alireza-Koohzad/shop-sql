@@ -195,4 +195,13 @@ insert into "Comment" (user_id , menuitem_id , message ) values (  8 ,6 , 'fgggg
 insert into "Comment" (user_id , menuitem_id , message ) values (  3 ,2 , 'bbbbv' );
 
 
+-- permission
+
+insert into "Permission" (user_id , per_name ) values (  5 , 'delete' );
+insert into "Permission" (user_id , per_name ) values (  5 , 'update' );
+insert into "Permission" (user_id , per_name ) values (  5 , 'insert' );
+insert into "Permission" (user_id , per_name ) values (  8 , 'delete' );
+insert into "Permission" (user_id , per_name ) values (  8 , 'update' );
+
+
 
