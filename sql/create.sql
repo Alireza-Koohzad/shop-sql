@@ -1,13 +1,14 @@
 
 create table  "Address"(
 	id  serial,
-	city varchar(20) not null , 
+	city varchar(30) not null , 
 	street_number INTEGER not null,
-	street_name Integer not null,
+	street_name varchar(30) not null,
 	post_code varchar(30) not null,
 	PRIMARY KEY (id)
 	
 );
+
 
 create table "Customer" (
 	id  serial,
