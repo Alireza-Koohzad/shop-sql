@@ -37,11 +37,11 @@ create table "User"(
 
 
 create table "Phone"(
-	phone_number Integer not null ,
+	phone_number varchar(20) not null ,
 	customer_id Integer not null , 
 	FOREIGN KEY (customer_id) REFERENCES "Customer" (id),
 	PRIMARY KEY (phone_number , customer_id),
-	CONSTRAINT check_phone_length  CHECK(phone_number =10)
+	CONSTRAINT check_phone_length  CHECK(length(phone_number) =10)
 )
 
 
@@ -177,7 +177,7 @@ create table "Comment" (
 create table "Rate" (
 	user_id Integer not null , 
 	menuItem_id Integer not null ,
-	rate integer not null,
+	rate integer ,
 	isBuy boolean not null ,  
 	FOREIGN KEY (user_id) REFERENCES "User" (id),
 	FOREIGN KEY (menuItem_id) REFERENCES "MenuItem" (id),
