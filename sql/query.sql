@@ -181,4 +181,12 @@ delete from "MenuItem" where price = 50000
 --حذف کلیه رکورد های جدول سبد حرید
 delete from "Cart" 
 
+--  آپدیت فیلد  وضعیت سفارش در جدول سفارش
+update "Order"  set pay_status = true;
+
+
+-- آپدیت قیمت غدا
+
+update "MenuItem" set price = 60000
+where  id = 7
 
