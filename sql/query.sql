@@ -170,7 +170,15 @@ CREATE INDEX index_food
 ON "MenuItem"(id);
 
 
+-- delete and update
 
+-- حذف کاربر با شماره ایدی ۵
+delete from "User" where id = 5;
 
+-- حذف غذا با قیمت ۵۰۰۰۰
+delete from "MenuItem" where price = 50000
+
+--حذف کلیه رکورد های جدول سبد حرید
+delete from "Cart" 
 
 
