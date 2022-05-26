@@ -159,6 +159,16 @@ on "Payment".id = D.payment_id
 where total_price > 30000 and D.status = false
 
 
+-- ایندکس روی شماره سفارش جدول سفارش
+
+CREATE INDEX index_order 
+ON "Order" (id);
+
+-- ایندکس روی شماره غذا جدول غذا
+
+CREATE INDEX index_food 
+ON "MenuItem"(id);
+
 
 
 
